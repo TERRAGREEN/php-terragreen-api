@@ -1,0 +1,194 @@
+{
+	"id": "028e1be1-ea04-4ddd-9aaf-2dc8fcc0adc3",
+	"name": "TG",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"b821dd57-76d1-479c-b6d7-8a530062dcba",
+		"a82b4ee2-4e0f-41ed-9392-0628c6661dad",
+		"f78723e7-ee24-4efd-b783-811ea7cc2f7e",
+		"458c4417-ea49-447c-b1d6-a7ec7bc88d54",
+		"e76524b9-2000-4a60-883f-5d97cfdaf6a0",
+		"bec8e882-e593-410c-ae8f-effddd52cf54"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "458c4417-ea49-447c-b1d6-a7ec7bc88d54",
+			"name": "http://localhost:58029/api/Transaction/Send",
+			"url": "http://localhost:58029/api/Transaction/Send",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer zVe4UZYmpj0YtbbcG5Xce3Q75QwOOnF-PDBcgH3Z-SeHOWYTtOD4JWKmVyv17NES7lyqLuWfsGVjFg_VRSrIiWgCe7MSyUBlMD0cCga04KxLm9fQ7A3Jbl95fcbjiudrtz_nkoYteoj3Lq4E1oRTlgRxyYckN4hccT24wXzX-VfEkJNWzyo0vuo65iRGdRDawctlX8sEBG85GN-4hcM-r5nux7BuBq3uO3WzH0hJm3j2iavASKCMlQil9wa_jhP4WKUWUGKVZrg2oKH3_NT81MczTvp5de5-J-HS6b26N-ek46Lne5WyH2tqr7XE4TcC",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n  \"ApiKey\": \"YukCSlQ06ZSWR609CogxpusvXZJQUFNWVEdSTlROWEhBU0g0\",\r\n  \"SecretKey\": \"YtzKRaPR8AokZry0rEcsuZ8frkIKqEtjQaXqmJMit29QUFNWVEdSTlROWEhBU0g0\",\r\n  \"SendAddress\": \"f8dcf6c02be0fd70b585c36b915e1f1c\",\r\n  \"Amount\": 3.4\r\n}",
+			"headers": "Content-Type: application/json\nAuthorization: bearer zVe4UZYmpj0YtbbcG5Xce3Q75QwOOnF-PDBcgH3Z-SeHOWYTtOD4JWKmVyv17NES7lyqLuWfsGVjFg_VRSrIiWgCe7MSyUBlMD0cCga04KxLm9fQ7A3Jbl95fcbjiudrtz_nkoYteoj3Lq4E1oRTlgRxyYckN4hccT24wXzX-VfEkJNWzyo0vuo65iRGdRDawctlX8sEBG85GN-4hcM-r5nux7BuBq3uO3WzH0hJm3j2iavASKCMlQil9wa_jhP4WKUWUGKVZrg2oKH3_NT81MczTvp5de5-J-HS6b26N-ek46Lne5WyH2tqr7XE4TcC\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a82b4ee2-4e0f-41ed-9392-0628c6661dad",
+			"name": "http://localhost:58029/api/Wallet/Balance",
+			"url": "http://localhost:58029/api/Wallet/Balance",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer zpaJr5mYQ8dZvt_rXPe81ayIjwCXH2cnUTaqlpQUq2yURwmIxErwKUbQHh_hkS3JPDj6HeGXOjcfHTLl5DhKGGDGI0Wi_ZxfdWeNMdqanzfg0SgA2HOk_yZYuPOz6ZPCRwiSBKK3PK7ppU--dekNQCEbwwvovc4OrPOtz1eVWrg0N86wuX6RFGYvCfz0J0XtyJsCU2m-ZItqorVT51YHSfZ1b8I5YedQonxBR95zJpD3K9XmYLosdTIXiSUgoUitq6GHeIVpjT0eIbaLEGPpfDYFPAXYJLhueE0QUbhH_gbA7esKVwhExLakEgiS9ssO",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n  \"ApiKey\": \"YukCSlQ06ZSWR609CogxpusvXZJQUFNWVEdSTlROWEhBU0g0\",\r\n  \"SecretKey\": \"YtzKRaPR8AokZry0rEcsuZ8frkIKqEtjQaXqmJMit29QUFNWVEdSTlROWEhBU0g0\",\r\n  \"Username\": \"NPrashant\"\r\n}",
+			"headers": "Content-Type: application/json\nAuthorization: bearer zpaJr5mYQ8dZvt_rXPe81ayIjwCXH2cnUTaqlpQUq2yURwmIxErwKUbQHh_hkS3JPDj6HeGXOjcfHTLl5DhKGGDGI0Wi_ZxfdWeNMdqanzfg0SgA2HOk_yZYuPOz6ZPCRwiSBKK3PK7ppU--dekNQCEbwwvovc4OrPOtz1eVWrg0N86wuX6RFGYvCfz0J0XtyJsCU2m-ZItqorVT51YHSfZ1b8I5YedQonxBR95zJpD3K9XmYLosdTIXiSUgoUitq6GHeIVpjT0eIbaLEGPpfDYFPAXYJLhueE0QUbhH_gbA7esKVwhExLakEgiS9ssO\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b821dd57-76d1-479c-b6d7-8a530062dcba",
+			"name": "http://localhost:58029/api/Wallet/Initialize",
+			"url": "http://localhost:58029/api/Wallet/Initialize",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n  \"ApiKey\": \"YukCSlQ06ZSWR609CogxpusvXZJQUFNWVEdSTlROWEhBU0g0\",\r\n  \"SecretKey\": \"YtzKRaPR8AokZry0rEcsuZ8frkIKqEtjQaXqmJMit29QUFNWVEdSTlROWEhBU0g0\",\r\n  \"Username\": \"NPrashant\",\r\n  \"Password\": \"Password123#\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "bec8e882-e593-410c-ae8f-effddd52cf54",
+			"name": "http://localhost:58029/api/Rate/GetRate",
+			"url": "http://localhost:58029/api/Rate/GetRate",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "e76524b9-2000-4a60-883f-5d97cfdaf6a0",
+			"name": "http://localhost:58029/api/Transaction/GetTransactionList",
+			"url": "http://localhost:58029/api/Transaction/GetTransactionList",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer zVe4UZYmpj0YtbbcG5Xce3Q75QwOOnF-PDBcgH3Z-SeHOWYTtOD4JWKmVyv17NES7lyqLuWfsGVjFg_VRSrIiWgCe7MSyUBlMD0cCga04KxLm9fQ7A3Jbl95fcbjiudrtz_nkoYteoj3Lq4E1oRTlgRxyYckN4hccT24wXzX-VfEkJNWzyo0vuo65iRGdRDawctlX8sEBG85GN-4hcM-r5nux7BuBq3uO3WzH0hJm3j2iavASKCMlQil9wa_jhP4WKUWUGKVZrg2oKH3_NT81MczTvp5de5-J-HS6b26N-ek46Lne5WyH2tqr7XE4TcC",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n  \"ApiKey\": \"YukCSlQ06ZSWR609CogxpusvXZJQUFNWVEdSTlROWEhBU0g0\",\r\n  \"SecretKey\": \"YtzKRaPR8AokZry0rEcsuZ8frkIKqEtjQaXqmJMit29QUFNWVEdSTlROWEhBU0g0\"\r\n  \r\n}",
+			"headers": "Authorization: bearer zVe4UZYmpj0YtbbcG5Xce3Q75QwOOnF-PDBcgH3Z-SeHOWYTtOD4JWKmVyv17NES7lyqLuWfsGVjFg_VRSrIiWgCe7MSyUBlMD0cCga04KxLm9fQ7A3Jbl95fcbjiudrtz_nkoYteoj3Lq4E1oRTlgRxyYckN4hccT24wXzX-VfEkJNWzyo0vuo65iRGdRDawctlX8sEBG85GN-4hcM-r5nux7BuBq3uO3WzH0hJm3j2iavASKCMlQil9wa_jhP4WKUWUGKVZrg2oKH3_NT81MczTvp5de5-J-HS6b26N-ek46Lne5WyH2tqr7XE4TcC\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f78723e7-ee24-4efd-b783-811ea7cc2f7e",
+			"name": "http://localhost:58029/api/Transaction/GetNewAddress",
+			"url": "http://localhost:58029/api/Transaction/GetNewAddress",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "bearer CEVf9G1gEVjGC0SkI9Vnuc3-CuTKAeop9bgKI4C6DdG2AYu3C9XG-zFI9g2sqVHH_kosPBRK1hjnkYyKM3zcfvifYywV-ZdvoghX2mjDr1xB5JcJm58oWXkDRO1StBEitTeWntaHkD9BwJEafmLLJGCPeUGNO73erA0roH9jdc2QnxmbGN1qLfxlRVZVrvLLGf6ZHoM-Ey_TnFOhZFbMlmlbfQLOKxcLBa7aMvGvIGP3aDqlc5jwbCbl2DmhtvUeiN7rJ34lTIRlfGPE6-4hPRW3kaFdbralWHAGpskQyC2SxyMirAzxvv_0FBKCfqWS",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n  \"ApiKey\": \"YukCSlQ06ZSWR609CogxpusvXZJQUFNWVEdSTlROWEhBU0g0\",\r\n  \"SecretKey\": \"YtzKRaPR8AokZry0rEcsuZ8frkIKqEtjQaXqmJMit29QUFNWVEdSTlROWEhBU0g0\"\r\n  \r\n}",
+			"headers": "Authorization: bearer CEVf9G1gEVjGC0SkI9Vnuc3-CuTKAeop9bgKI4C6DdG2AYu3C9XG-zFI9g2sqVHH_kosPBRK1hjnkYyKM3zcfvifYywV-ZdvoghX2mjDr1xB5JcJm58oWXkDRO1StBEitTeWntaHkD9BwJEafmLLJGCPeUGNO73erA0roH9jdc2QnxmbGN1qLfxlRVZVrvLLGf6ZHoM-Ey_TnFOhZFbMlmlbfQLOKxcLBa7aMvGvIGP3aDqlc5jwbCbl2DmhtvUeiN7rJ34lTIRlfGPE6-4hPRW3kaFdbralWHAGpskQyC2SxyMirAzxvv_0FBKCfqWS\nContent-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
