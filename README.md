@@ -18,3 +18,7 @@
     }
     </pre>
 </div>
+<h2>Bearer authorization token</h2>
+<p>Bearer tokens allow for a more secure point of entry for developers to use the TerraGreen APIs. They are one of the core features of OAuth 2.0. Bearer tokens are a type of access token; authentication which uses bearer tokens is also known sometimes as application-only authentication or auth-only authentication.</p>
+<br/>
+<h3>Getting started</h3>
