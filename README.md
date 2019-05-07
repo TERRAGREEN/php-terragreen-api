@@ -40,42 +40,75 @@ require_once 'vendor/config.php'; // Autoload data using config file
 require_once 'src/TerraGreen/TGNAPI.php'; // Class Api File
 </pre>					
 </div>
-<h3 class="parent" style="text-decoration: underline;">Create Wallet</h3>
+<h1>Block</h1>
+<hr/>
+<h3 class="parent" style="text-decoration: underline;">Get Block</h3>
 <div class="child">
-<p>Create New Wallet Account.</p>
+<p>Get Single Block Details.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
 
-$response =  $api->CreateWallet();
+$BlockId = 375808;
+$response =  $api->GetBlockDetails($BlockId);
 echo json_encode($response);
 </pre>
 </div>
 </div>
-<h3 class="parent" style="text-decoration: underline;">Get Initialize</h3>
+<h3 class="parent" style="text-decoration: underline;">Get Block</h3>
 <div class="child">
-<p>Get access-token to access all authorized apis.</p>
+<p>Get Block Details with starting and ending offset.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
 
-$response =  $api->GetInitialize();
+$start = 1;
+$end = 5;
+$response =  $api->GetBlockDetails($start,$end);
 echo json_encode($response);
 </pre>
 </div>
 </div>
-<h3 class="parent" style="text-decoration: underline;">Get Balance</h3>
+<h3 class="parent" style="text-decoration: underline;">Get Latest Block</h3>
 <div class="child">
-<p>Get Wallet Balance.</p>
+<p>Get Latest Block Details.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
 
-$response =  $api->GetBalance();
+$response =  $api->GetLatestBlock();
 echo json_encode($response);
 </pre>
 </div>
 </div>
+<h1>Rate</h1>
+<hr/>
+<h3 class="parent" style="text-decoration: underline;">Get Rate</h3>
+<div class="child">
+<p>Get TGCoin's current rates.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->CurrentRate();
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h3 class="parent" style="text-decoration: underline;">Get All Rate</h3>
+<div class="child">
+<p>Get All TGCoin's current rates.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->GetAllRate();
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h1>Transaction</h1>
+<hr/>
 <h3 class="parent" style="text-decoration: underline;">Get New Address</h3>
 <div class="child">
 <p>Get new receive address.</p>
@@ -113,14 +146,52 @@ echo json_encode($response);
 </pre>
 </div>
 </div>
-<h3 class="parent" style="text-decoration: underline;">Get Rate</h3>
+<h3 class="parent" style="text-decoration: underline;">Verify Payment</h3>
 <div class="child">
-<p>Get TGCoin's current rates.</p>
+<p>Verify Payment Status.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
 
-$response =  $api->CurrentRate();
+$response =  $api->VerifyPaymentStatus($SEND_ADDRESS);
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h1>Wallet</h1>
+<hr/>
+<h3 class="parent" style="text-decoration: underline;">Create Wallet</h3>
+<div class="child">
+<p>Create New Wallet Account.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->CreateWallet();
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h3 class="parent" style="text-decoration: underline;">Get Initialize</h3>
+<div class="child">
+<p>Get access-token to access all authorized apis.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->GetInitialize();
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h3 class="parent" style="text-decoration: underline;">Get Balance</h3>
+<div class="child">
+<p>Get Wallet Balance.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->GetBalance();
 echo json_encode($response);
 </pre>
 </div>
