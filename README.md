@@ -24,12 +24,14 @@
 <h3>Getting started</h3>
 <p>Set Below parameters in \src\TerraGreen\config.php file, which you obtain from BlockChain portal.</p>
 <div style="background-color: #eee;padding: 10px;">
-				<p>$API_KEY = "[API KEY]";</p>
-				<p>$SECRECT_KEY = "[SECRET KEY]";</p>
-				<p>$USERNAME = "wallet name";</p>
-				<p>$PASSWORD = "password";</p>
-				<p>$SEND_ADDRESS  = "send address";</p>
-				</div>
+	<pre>
+<p>$API_KEY = "[API KEY]";</p>
+<p>$SECRECT_KEY = "[SECRET KEY]";</p>
+<p>$USERNAME = "wallet name";</p>
+<p>$PASSWORD = "password";</p>
+<p>$SEND_ADDRESS  = "send address";</p>
+</pre>
+</div>
 				<br/><br/>
 				<p>Add Below Config Files in every pages</p>
 				<div style="background-color: #eee;padding: 10px;">
