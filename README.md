@@ -1,6 +1,6 @@
 <div style="padding:10px;">
-			<h1>Documentation for the TerraGreen API</h1>
-			<h2>General API Information or Features</h2>
+			<h1>PHP TerraGreen API</h1>
+			<h2>General API Features</h2>
 			<ul>
 				<li>Implementation of all General, Market Data and Accounting Related Data.</li>
 				<li>Simple handling of authentication</li>
