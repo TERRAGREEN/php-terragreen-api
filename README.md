@@ -40,12 +40,14 @@ require_once 'vendor/config.php'; // Autoload data using config file
 require_once 'src/TerraGreen/TGNAPI.php'; // Class Api File
 </pre>					
 </div>
-<h3 class="parent" style="text-decoration: underline;">Create Wallet</h3>
+h3 class="parent" style="text-decoration: underline;">Create Wallet</h3>
 <div class="child">
 <p>Create Wallet Account.</p>
 <div style="background-color: #eee;padding: 10px;">
+<pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
 $response =  $api->CreateWallet();
 echo json_encode($response);
+</pre>
 </div>
-</div>	
+</div>
