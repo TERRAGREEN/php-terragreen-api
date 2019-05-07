@@ -25,6 +25,7 @@ $API_KEY = "[API_KEY]";
 $SECRECT_KEY="[SECRECT_KEY]";
 $USERNAME="[WALLET_NAME]";
 $PASSWORD="[PASSWORD]";
+$SEND_ADDRESS="[SEND_ADDRESS]";
 </pre>
 </div>
 <p>Add Below Config Files for all operations</p>
