@@ -10,7 +10,6 @@
 				<li>Unique API Key & Secret Key provided to each user.</li>
 			</ul>
 			<h2>Installation</h2>
-			<hr/>
 			Install the library using Composer. Please read the <a href="https://getcomposer.org/doc/01-basic-usage.md" rel="nofollow">Composer Documentation</a> if you are unfamiliar with Composer or dependency managers in general.
 			<div style="background-color: #eee;padding: 10px;"><pre>
 	"require": {
@@ -41,7 +40,6 @@ require_once 'src/TerraGreen/TGNAPI.php'; // Class Api File
 </pre>					
 </div>
 <h1>Block</h1>
-<hr/>
 <h3 class="parent" style="text-decoration: underline;">Get Block</h3>
 <div class="child">
 <p>Get Single Block Details.</p>
@@ -82,7 +80,6 @@ echo json_encode($response);
 </div>
 </div>
 <h1>Rate</h1>
-<hr/>
 <h3 class="parent" style="text-decoration: underline;">Get Rate</h3>
 <div class="child">
 <p>Get TGCoin's current rates.</p>
@@ -108,7 +105,6 @@ echo json_encode($response);
 </div>
 </div>
 <h1>Transaction</h1>
-<hr/>
 <h3 class="parent" style="text-decoration: underline;">Get New Address</h3>
 <div class="child">
 <p>Get new receive address.</p>
@@ -159,7 +155,6 @@ echo json_encode($response);
 </div>
 </div>
 <h1>Wallet</h1>
-<hr/>
 <h3 class="parent" style="text-decoration: underline;">Create Wallet</h3>
 <div class="child">
 <p>Create New Wallet Account.</p>
