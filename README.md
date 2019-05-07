@@ -32,7 +32,6 @@ $PASSWORD = "password";
 $SEND_ADDRESS  = "send address";
 </pre>
 </div>
-<br/><br/>
 <p>Add Below Config Files in every pages</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>					
