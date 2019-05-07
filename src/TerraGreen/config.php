@@ -1,6 +1,0 @@
-<?php
-$API_KEY = "jt8xrwf0F8c02nHEazIzW8jFsYVQUFNWVEdSTlROWEhBU0g0";
-$SECRECT_KEY="tnJY0vjFylDqHwHTxlgDovvGOUq0aJzfTEZpBaaDmX9QUFNWVEdSTlROWEhBU0g0";
-$USERNAME="hirenpatel";
-$PASSWORD="Hiren@123";
-?>
