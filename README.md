@@ -76,3 +76,52 @@ echo json_encode($response);
 </pre>
 </div>
 </div>
+<h3 class="parent" style="text-decoration: underline;">Get New Address</h3>
+<div class="child">
+<p>Get new receive address.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->GetNewAddress();
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h3 class="parent" style="text-decoration: underline;">Send Balance</h3>
+<div class="child">
+<p>Send amount to other user's wallet.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$amount = 2.1;
+$response =  $api->SendBalance($SEND_ADDRESS,$amount);
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h3 class="parent" style="text-decoration: underline;">Get Transaction List</h3>
+<div class="child">
+<p>Send amount to other user's wallet.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->GetTransactionList();
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h3 class="parent" style="text-decoration: underline;">Get Rate</h3>
+<div class="child">
+<p>Get TGCoin's current rates.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->CurrentRate();
+echo json_encode($response);
+</pre>
+</div>
+</div>
