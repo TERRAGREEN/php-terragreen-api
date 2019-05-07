@@ -31,7 +31,7 @@ $PASSWORD = "password";
 $SEND_ADDRESS  = "send address";
 </pre>
 </div>
-<p>Add Below Config Files in every pages</p>
+<p>Add Below Config Files for all operations</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>					
 require_once 'vendor/autoload.php'; // Autoload files using Composer autoload
