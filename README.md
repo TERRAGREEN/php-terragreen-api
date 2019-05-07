@@ -42,11 +42,36 @@ require_once 'src/TerraGreen/TGNAPI.php'; // Class Api File
 </div>
 <h3 class="parent" style="text-decoration: underline;">Create Wallet</h3>
 <div class="child">
-<p>Create Wallet Account.</p>
+<p>Create New Wallet Account.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
 $response =  $api->CreateWallet();
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h3 class="parent" style="text-decoration: underline;">Get Initialize</h3>
+<div class="child">
+<p>Get access-token to access all authorized apis.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->GetInitialize();
+echo json_encode($response);
+</pre>
+</div>
+</div>
+<h3 class="parent" style="text-decoration: underline;">Get Balance</h3>
+<div class="child">
+<p>Get Wallet Balance.</p>
+<div style="background-color: #eee;padding: 10px;">
+<pre>
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+
+$response =  $api->GetBalance();
 echo json_encode($response);
 </pre>
 </div>
