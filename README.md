@@ -21,10 +21,10 @@
 <p>Set Below parameters in config.php file, which you obtain from BlockChain portal.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$API_KEY = "<API_KEY>";
-$SECRECT_KEY="<SECRECT_KEY>";
-$USERNAME="<WALLET_NAME>";
-$PASSWORD="<PAASWORD>";
+$API_KEY = "[API_KEY]";
+$SECRECT_KEY="[SECRECT_KEY]";
+$USERNAME="[WALLET_NAME]";
+$PASSWORD="[PAASWORD]";
 </pre>
 </div>
 <p>Add Below Config Files for all operations</p>
