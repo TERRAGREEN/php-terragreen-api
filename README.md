@@ -32,7 +32,7 @@ $PASSWORD="[PAASWORD]";
 <pre>					
 require_once 'vendor/autoload.php'; // Autoload files using Composer autoload
 require_once 'vendor/config.php'; // Autoload data using config file
-require_once 'src/TerraGreen/TGNAPI.php'; // Class Api File
+require_once 'src/TerraGreen/TGNAPI.php'; // Api Class File
 </pre>					
 </div>
 <h1>Block</h1>
