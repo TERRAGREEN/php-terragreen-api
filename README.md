@@ -33,9 +33,7 @@
 <br/><br/>
 <p>Add Below Config Files in every pages</p>
 <div style="background-color: #eee;padding: 10px;">
-
-		require_once 'vendor/autoload.php';
-		require_once 'vendor/config.php';
-		require_once 'src/TerraGreen/TGNAPI.php';
-
+require_once 'vendor/autoload.php';
+require_once 'vendor/config.php';
+require_once 'src/TerraGreen/TGNAPI.php';
 </div>
