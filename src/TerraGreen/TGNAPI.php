@@ -1,5 +1,4 @@
 <?php
-namespace TerraGreen;
 class TGNAPI 
 {   
    protected $api_key; 
