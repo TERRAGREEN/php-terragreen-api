@@ -31,7 +31,8 @@ $SEND_ADDRESS="[SEND_ADDRESS]";
 <p>Add Namespace & Below Config Files for all operations</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-use TerraGreen\TGNAPI;
+use TerraGreen\TGNAPI; //Main Class Library 
+
 require_once 'vendor/autoload.php'; // Autoload files using Composer autoload
 require_once 'vendor/config.php'; // Autoload data using config file
 </pre>					
