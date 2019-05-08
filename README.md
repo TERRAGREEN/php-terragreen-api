@@ -51,9 +51,9 @@ require_once 'vendor/config.php'; // Autoload data using config file
 </pre>					
 </div>
 <h1>Block</h1>
-<h3 class="parent" style="text-decoration: underline;">Get Block</h3>
+<h3 class="parent" style="text-decoration: underline;">Get Blocks Details</h3>
 <div class="child">
-<p>Get Single Block Details.</p>
+<p>Get block details.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
@@ -64,9 +64,9 @@ echo json_encode($response);
 </pre>
 </div>
 </div>
-<h3 class="parent" style="text-decoration: underline;">Get Block</h3>
+<h3 class="parent" style="text-decoration: underline;">Get Blocks</h3>
 <div class="child">
-<p>Get Block Details with starting and ending offset.</p>
+<p>Get Blocklist.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
@@ -80,7 +80,7 @@ echo json_encode($response);
 </div>
 <h3 class="parent" style="text-decoration: underline;">Get Latest Block</h3>
 <div class="child">
-<p>Get Latest Block Details.</p>
+<p>Gets latest block list.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
@@ -105,7 +105,7 @@ echo json_encode($response);
 </div>
 <h3 class="parent" style="text-decoration: underline;">Get All Rate</h3>
 <div class="child">
-<p>Get All TGCoin's current rates.</p>
+<p>Get TGCoin rates.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
@@ -143,7 +143,7 @@ echo json_encode($response);
 </div>
 <h3 class="parent" style="text-decoration: underline;">Get Transaction List</h3>
 <div class="child">
-<p>Send amount to other user's wallet.</p>
+<p>Get transaction list of the user.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
@@ -155,7 +155,7 @@ echo json_encode($response);
 </div>
 <h3 class="parent" style="text-decoration: underline;">Verify Payment</h3>
 <div class="child">
-<p>Verify Payment Status.</p>
+<p>Verify transaction's payment status.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
@@ -168,7 +168,7 @@ echo json_encode($response);
 <h1>Wallet</h1>
 <h3 class="parent" style="text-decoration: underline;">Create Wallet</h3>
 <div class="child">
-<p>Create New Wallet Account.</p>
+<p>Create Wallet Account.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
 $api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
