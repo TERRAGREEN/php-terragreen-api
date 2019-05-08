@@ -1,21 +1,34 @@
 <div style="padding:10px;">
-			<h1>PHP TerraGreen API</h1>
-			<h2>General API Features</h2>
-			<ul>
-				<li>Implementation of all General, Market Data and Accounting Related Data.</li>
-				<li>Simple handling of authentication</li>
-				<li>Manage Wallet, Transaction Details, Rates And Block Details.</li>
-				<li>Exception Handling.</li>
-				<li>API Response in diffrent formats like JSON & XML.</li>
-				<li>Unique API Key & Secret Key provided to each user.</li>
-			</ul>
-			<h2>Installation</h2>
-			Install the library using Composer. Please read the <a href="https://getcomposer.org/doc/01-basic-usage.md" rel="nofollow">Composer Documentation</a> if you are unfamiliar with Composer or dependency managers in general.
-			<div style="background-color: #eee;padding: 10px;"><pre>
-	"require": {
-        "php": ">=5.3.0"
-    }
-    </pre>
+<h1>PHP TerraGreen API</h1>
+<h2>General API Features</h2>
+<ul>
+	<li>Implementation of all General, Market Data and Accounting Related Data.</li>
+	<li>Simple handling of authentication</li>
+	<li>Manage Wallet, Transaction Details, Rates And Block Details.</li>
+	<li>Exception Handling.</li>
+	<li>API Response in diffrent formats like JSON & XML.</li>
+	<li>Unique API Key & Secret Key provided to each user.</li>
+</ul>
+<h2>API key</h2>
+		
+<p>To use Terragreen API, user will need to obtain API key and secret key, which are passed to TerraGreen API with every request. API keys can be generated in the TerraGreen BlockChain Portal, under section 'API KEYS'. Direct link to API key creation panel:<a class="btn-link" href="http://blockchain.terragreen.io/Docs/ApiKeys" target="_blank">Click Here</a></p>
+<p>
+Steps to obtain API Key and Secrat key:
+</p>
+<ol>
+<li>Create account at BlockChain portal. <a class="btn-link" href="http://blockchain.terragreen.io/Account/Register">click here</a></li>
+<li>Verify your account</li>
+<li>SignIn at BlockChain portal <a class="btn-link" href="http://blockchain.terragreen.io/Account/Login">click here</a></li>
+<li>Go to Api Key section <a class="btn-link" href="http://blockchain.terragreen.io/Docs/ApiKeys">click here</a></li>
+<li>Create Api Key <a class="btn-link" href="http://blockchain.terragreen.io/Api/ApiCreate">click here</a></li>
+</ol>
+<h2>Installation</h2>
+Install the library using Composer. Please read the <a href="https://getcomposer.org/doc/01-basic-usage.md" rel="nofollow">Composer Documentation</a> if you are unfamiliar with Composer or dependency managers in general.
+<div style="background-color: #eee;padding: 10px;"><pre>
+"require": {
+"php": ">=5.3.0"
+}
+</pre>
 </div>
 <h3>Getting started</h3>
 <p>Set Below parameters in config.php file, which you obtain from BlockChain portal.</p>
