@@ -28,12 +28,12 @@ $PASSWORD="[PASSWORD]";
 $SEND_ADDRESS="[SEND_ADDRESS]";
 </pre>
 </div>
-<p>Add Below Config Files for all operations</p>
+<p>Add Namespace & Below Config Files for all operations</p>
 <div style="background-color: #eee;padding: 10px;">
-<pre>					
+<pre>
+use TerraGreen\TGNAPI;
 require_once 'vendor/autoload.php'; // Autoload files using Composer autoload
 require_once 'vendor/config.php'; // Autoload data using config file
-require_once 'src/TerraGreen/TGNAPI.php'; // Api Class File
 </pre>					
 </div>
 <h1>Block</h1>
