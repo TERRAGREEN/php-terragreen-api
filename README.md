@@ -19,7 +19,7 @@ Steps to obtain API Key and Secrat key:
 <li>Create account at BlockChain portal. <a class="btn-link" href="http://blockchain.terragreen.io/Account/Register">click here</a></li>
 <li>Verify your account</li>
 <li>SignIn at BlockChain portal <a class="btn-link" href="http://blockchain.terragreen.io/Account/Login">click here</a></li>
-<li>Go to Api Key section <a class="btn-link" href="http://blockchain.terragreen.io/Docs/ApiKeys">click here</a></li>
+<li>Go to Api Key section <a class="btn-link" href="http://blockchain.terragreen.io/Docs/Index">click here</a></li>
 <li>Create Api Key <a class="btn-link" href="http://blockchain.terragreen.io/Api/ApiCreate">click here</a></li>
 </ol>
 <h2>Installation</h2>
