@@ -1,4 +1,6 @@
 <?php
+namespace TerraGreen;
+
 class TGNAPI 
 {   
    protected $api_key; 
@@ -98,6 +100,7 @@ class TGNAPI
 
    //Create New Wallet
     public function CreateWallet(){
+      
         $data_array =  array(
          "ApiKey"           => $this->api_key,
          "SecretKey"        => $this->api_secret,
