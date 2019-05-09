@@ -25,9 +25,7 @@ Steps to obtain an API Key and Secret key:
 <h2>Installation</h2>
 Install the library using Composer. Please read the <a href="https://getcomposer.org/doc/01-basic-usage.md" rel="nofollow">Composer Documentation</a> if you are unfamiliar with Composer or dependency managers in general.
 <div style="background-color: #eee;padding: 10px;"><pre>
-"require": {
-"php": ">=5.3.0"
-}
+composer require terragreen/terragreen-official-api-docs-master
 </pre>
 </div>
 <h3>Getting started</h3>
