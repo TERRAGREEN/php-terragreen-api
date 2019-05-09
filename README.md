@@ -4,23 +4,23 @@
 <ul>
 	<li>Implementation of all General, Market Data and Accounting Related Data.</li>
 	<li>Simple handling of authentication</li>
-	<li>Manage Wallet, Transaction Details, Rates And Block Details.</li>
+	<li>Manage Wallet, Transaction Details, Rates, And Block Details.</li>
 	<li>Exception Handling.</li>
-	<li>API Response in diffrent formats like JSON & XML.</li>
+	<li>API Response in different formats like JSON & XML.</li>
 	<li>Unique API Key & Secret Key provided to each user.</li>
 </ul>
 <h2>API key</h2>
 		
-<p>To use Terragreen API, user will need to obtain API key and secret key, which are passed to TerraGreen API with every request. API keys can be generated in the TerraGreen BlockChain Portal, under section 'API KEYS'. Direct link to API key creation panel:<a class="btn-link" href="http://blockchain.terragreen.io/Api/ApiCreate" target="_blank">Click Here</a></p>
+<p>To use Terragreen API, the user will need to obtain an API key and secret key, which are passed to TerraGreen API with every request. API keys can be generated in the TerraGreen BlockChain Portal, under the section 'API KEYS'. Direct link to API key creation panel:<a class="btn-link" href="http://blockchain.terragreen.io/Api/ApiCreate" target="_blank">Click Here</a></p>
 <p>
-Steps to obtain API Key and Secrat key:
+Steps to obtain an API Key and Secret key:
 </p>
 <ol>
-<li>Create account at BlockChain portal. <a class="btn-link" href="http://blockchain.terragreen.io/Account/Register">click here</a></li>
+<li>Create an account at BlockChain portal. <a class="btn-link" href="http://blockchain.terragreen.io/Account/Register">click here</a></li>
 <li>Verify your account</li>
 <li>SignIn at BlockChain portal <a class="btn-link" href="http://blockchain.terragreen.io/Account/Login">click here</a></li>
-<li>Go to Api Key section <a class="btn-link" href="http://blockchain.terragreen.io/Docs/Index">click here</a></li>
-<li>Create Api Key <a class="btn-link" href="http://blockchain.terragreen.io/Api/ApiCreate">click here</a></li>
+<li>Go to API Key section <a class="btn-link" href="http://blockchain.terragreen.io/Docs/Index">click here</a></li>
+<li>Create API Key <a class="btn-link" href="http://blockchain.terragreen.io/Api/ApiCreate">click here</a></li>
 </ol>
 <h2>Installation</h2>
 Install the library using Composer. Please read the <a href="https://getcomposer.org/doc/01-basic-usage.md" rel="nofollow">Composer Documentation</a> if you are unfamiliar with Composer or dependency managers in general.
