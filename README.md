@@ -34,6 +34,7 @@ composer require terragreen/terragreen-official-api-docs-master
 <pre>
 $API_KEY = "[API_KEY]";
 $SECRECT_KEY="[SECRECT_KEY]";
+$EMAIL_ADDRESS="[EMAIL_ADDRESS]";
 $USERNAME="[WALLET_NAME]";
 $PASSWORD="[PASSWORD]";
 $SEND_ADDRESS="[SEND_ADDRESS]";
@@ -54,7 +55,7 @@ require_once 'vendor/config.php'; // Autoload data using config file
 <p>Get block details.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $BlockId = 375808;
 $response =  $api->GetBlockDetails($BlockId);
@@ -67,7 +68,7 @@ echo json_encode($response);
 <p>Get Blocklist.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $start = 1;
 $end = 5;
@@ -81,7 +82,7 @@ echo json_encode($response);
 <p>Gets latest block list.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $response =  $api->GetLatestBlock();
 echo json_encode($response);
@@ -94,7 +95,7 @@ echo json_encode($response);
 <p>Get TGCoin's current rates.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $response =  $api->CurrentRate();
 echo json_encode($response);
@@ -106,7 +107,7 @@ echo json_encode($response);
 <p>Get TGCoin rates.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $response =  $api->GetAllRate();
 echo json_encode($response);
@@ -119,7 +120,7 @@ echo json_encode($response);
 <p>Get new receive address.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $response =  $api->GetNewAddress();
 echo json_encode($response);
@@ -131,7 +132,7 @@ echo json_encode($response);
 <p>Send amount to other user's wallet.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $amount = 2.1;
 $response =  $api->SendBalance($SEND_ADDRESS,$amount);
@@ -144,7 +145,7 @@ echo json_encode($response);
 <p>Get transaction list of the user.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $response =  $api->GetTransactionList();
 echo json_encode($response);
@@ -156,7 +157,7 @@ echo json_encode($response);
 <p>Verify transaction's payment status.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $response =  $api->VerifyPaymentStatus($SEND_ADDRESS);
 echo json_encode($response);
@@ -169,7 +170,7 @@ echo json_encode($response);
 <p>Create Wallet Account.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $response =  $api->CreateWallet();
 echo json_encode($response);
@@ -181,7 +182,7 @@ echo json_encode($response);
 <p>Get access-token to access all authorized apis.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $response =  $api->GetInitialize();
 echo json_encode($response);
@@ -193,7 +194,7 @@ echo json_encode($response);
 <p>Get Wallet Balance.</p>
 <div style="background-color: #eee;padding: 10px;">
 <pre>
-$api = new TGNAPI($API_KEY, $SECRECT_KEY,$USERNAME,$PASSWORD);
+$api = new TGNAPI($API_KEY, $SECRECT_KEY,$EMAIL_ADDRESS,$USERNAME,$PASSWORD);
 
 $response =  $api->GetBalance();
 echo json_encode($response);
