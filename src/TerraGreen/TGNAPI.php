@@ -139,7 +139,7 @@ class TGNAPI
         $data_array =  array(
          "ApiKey"        => $this->api_key,
          "SecretKey"     => $this->api_secret,
-         "Username"      => $this->api_username  
+         "WalletName"    => $this->api_username  
         );
     
       $get_data = TGNAPI::BalanceAPI('POST', 'Wallet/Balance', json_encode($data_array), $access_token);
