@@ -9,12 +9,13 @@ class TGNAPI
    protected $api_password;   
    protected $base_url;   
    
-   public function __construct( string $api_key = '', string $api_secret = '', string $api_username = '', string $api_password = ''){
-      $this->api_key      = $api_key;
-      $this->api_secret   = $api_secret;
-      $this->api_username = $api_username;
-      $this->api_password = $api_password;      
-      $this->base_url = 'http://api.terragreen.io/api/';      
+   public function __construct( string $api_key = '', string $api_secret = '', string $api_user_email = '' ,string $api_username = '', string $api_password = ''){
+      $this->api_key        = $api_key;
+      $this->api_secret     = $api_secret;
+      $this->api_user_email = $api_user_email;
+      $this->api_username   = $api_username;
+      $this->api_password   = $api_password;      
+      $this->base_url       = 'http://api.terragreen.io/api/';      
    }
    //Call API without Header info
    private  function callAPI($method, $url, $data){
@@ -104,8 +105,9 @@ class TGNAPI
         $data_array =  array(
          "ApiKey"           => $this->api_key,
          "SecretKey"        => $this->api_secret,
-         "Username"         => $this->api_username,
-         "Password"         => $this->api_password      
+         "Email"            => $this->api_user_email,
+         "WalletName"       => $this->api_username,
+         "WalletPassword"   => $this->api_password      
         );
     
       $get_data = TGNAPI::callAPI('POST', 'Wallet/Create', json_encode($data_array));
@@ -118,8 +120,8 @@ class TGNAPI
         $data_array =  array(
          "ApiKey"           => $this->api_key,
          "SecretKey"        => $this->api_secret,
-         "Username"         => $this->api_username,
-         "Password"         => $this->api_password      
+         "WalletName"       => $this->api_username,
+         "WalletPassword"   => $this->api_password      
         );
     
       $get_data = TGNAPI::callAPI('POST', 'Wallet/Initialize', json_encode($data_array));
