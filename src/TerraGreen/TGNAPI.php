@@ -15,7 +15,7 @@ class TGNAPI
       $this->api_user_email = $api_user_email;
       $this->api_username   = $api_username;
       $this->api_password   = $api_password;      
-      $this->base_url       = 'http://api.terragreen.io/api/';      
+      $this->base_url       = 'https://api.terragreen.io/api/';      
    }
    //Call API without Header info
    private  function callAPI($method, $url, $data){
@@ -133,16 +133,12 @@ class TGNAPI
     public function GetBalance(){
         $make_call =  TGNAPI::GetInitialize();
 
-        $response = json_decode($make_call, true);
-        $access_token = $response['access_token'];
+      $response = json_decode($make_call, true);
+      $access_token = $response['access_token'];
 
-        $data_array =  array(
-         "ApiKey"        => $this->api_key,
-         "SecretKey"     => $this->api_secret,
-         "WalletName"    => $this->api_username  
-        );
+      $data_array =  array();
     
-      $get_data = TGNAPI::BalanceAPI('POST', 'Wallet/Balance', json_encode($data_array), $access_token);
+      $get_data = TGNAPI::BalanceAPI('GET', 'Wallet/Balance',$data_array,$access_token);
       $response = json_decode($get_data, true);
       return json_encode($response);
     }
@@ -154,8 +150,6 @@ class TGNAPI
         $access_token = $response['access_token'];
 
         $data_array =  array(
-         "ApiKey"        => $this->api_key,
-         "SecretKey"     => $this->api_secret,
          "BlockId"      => $BlockId, 
         );
     
@@ -171,9 +165,7 @@ class TGNAPI
         $access_token = $response['access_token'];
 
         $data_array =  array(
-         "ApiKey"        => $this->api_key,
-         "SecretKey"     => $this->api_secret,
-         "StartIndex"      => $start,
+          "StartIndex"      => $start,
          "EndIndex"      => $end,
         );
     
@@ -188,12 +180,9 @@ class TGNAPI
         $response = json_decode($make_call, true);
         $access_token = $response['access_token'];
 
-        $data_array =  array(
-         "ApiKey"        => $this->api_key,
-         "SecretKey"     => $this->api_secret,
-        );
+        $data_array =  array();
     
-      $get_data = TGNAPI::BalanceAPI('POST', 'Block/GetLatestBlocks', json_encode($data_array), $access_token);
+      $get_data = TGNAPI::BalanceAPI('GET', 'Block/GetLatestBlocks', $data_array, $access_token);
       $response = json_decode($get_data, true);
       return json_encode($response);
     }
@@ -204,12 +193,9 @@ class TGNAPI
         $response = json_decode($make_call, true);
         $access_token = $response['access_token'];
 
-        $data_array =  array(
-         "ApiKey"        => $this->api_key,
-         "SecretKey"     => $this->api_secret,
-        );
+        $data_array =  array();
     
-      $get_data = TGNAPI::BalanceAPI('POST', 'Transaction/GetNewAddress', json_encode($data_array), $access_token);
+      $get_data = TGNAPI::BalanceAPI('GET', 'Transaction/GetNewAddress', $data_array, $access_token);
       $response = json_decode($get_data, true);
       return json_encode($response);
     }
@@ -220,12 +206,9 @@ class TGNAPI
         $response = json_decode($make_call, true);
         $access_token = $response['access_token'];
 
-        $data_array =  array(
-         "ApiKey"        => $this->api_key,
-         "SecretKey"     => $this->api_secret,
-        );
+        $data_array =  array();
     
-      $get_data = TGNAPI::BalanceAPI('POST', 'Transaction/GetTransactionList', json_encode($data_array), $access_token);
+      $get_data = TGNAPI::BalanceAPI('GET', 'Transaction/GetTransactionList', $data_array, $access_token);
       $response = json_decode($get_data, true);
       return json_encode($response);
     }
@@ -237,8 +220,6 @@ class TGNAPI
         $access_token = $response['access_token'];
 
         $data_array =  array(
-         "ApiKey"        => $this->api_key,
-         "SecretKey"     => $this->api_secret,
          "SendAddress"      => $send_address,
          "Amount"           => $amount 
         );
@@ -254,11 +235,7 @@ class TGNAPI
         $response = json_decode($make_call, true);
         $access_token = $response['access_token'];
 
-        $data_array =  array(
-         "ApiKey"        => $this->api_key,
-         "SecretKey"     => $this->api_secret,
-         "ReceiveAddress"      => $send_address,
-        );
+        $data_array =  array("ReceiveAddress"      => $send_address);
     
       $get_data = TGNAPI::BalanceAPI('POST', 'Transaction/VerifyPaymentStatus?=', json_encode($data_array), $access_token);
       $response = json_decode($get_data, true);
